@@ -40,23 +40,24 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "format": "prettier . --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commit": "git-cz"
   },
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@12.16.1",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/github": "^11.0.6",
     "@semantic-release/npm": "^12.0.2",
-    "@semantic-release/release-notes-generator": "^14.0.3",
+    "@semantic-release/release-notes-generator": "^14.1.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.2",
+    "lint-staged": "^16.4.0",
     "prettier": "3.6.2",
-    "semantic-release": "^24.2.5",
-    "tsup": "^8.5.0",
-    "typescript": "^5.8.3"
+    "semantic-release": "^24.2.9",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   },
   "config": {
     "commitizen": {
