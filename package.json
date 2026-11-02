@@ -10,7 +10,7 @@
     "performance"
   ],
   "license": "MIT",
-  "author": "Lietson Dos Santos",
+  "author": "Lietson dos Santos",
   "homepage": "https://github.com/liets0n/sortfy.js",
   "repository": {
     "type": "git",
@@ -19,15 +19,7 @@
   "bugs": {
     "url": "https://github.com/liets0n/sortfy.js/issues"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    }
-  },
   "files": [
     "dist",
     "CHANGELOG.md",
@@ -35,13 +27,18 @@
     "LICENSE"
   ],
   "sideEffects": false,
+  "type": "module",
   "scripts": {
     "clean": "rm -rf ./dist",
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown --minify",
     "format": "prettier . --write",
     "prepare": "husky",
     "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "packageManager": "pnpm@12.16.1",
   "devDependencies": {
@@ -56,12 +53,11 @@
     "lint-staged": "^16.4.0",
     "prettier": "3.6.2",
     "semantic-release": "^24.2.9",
-    "tsup": "^8.5.1",
+    "tsdown": "^0.23.4",
     "typescript": "^5.9.3"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
   }
 }

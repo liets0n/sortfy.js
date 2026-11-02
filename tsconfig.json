@@ -24,8 +24,11 @@
     "noUnusedParameters": true,                         /* Raise an error when a function parameter isn't read. */
 
     /* Completeness */
-    "skipLibCheck": true                                /* Skip type checking all .d.ts files. */
+    // "skipLibCheck": true,                               /* Skip type checking all .d.ts files. */
+
+    "declarationMap": true,
+    "isolatedDeclarations": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "example", "dist", "**/*.test.ts"]
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }
