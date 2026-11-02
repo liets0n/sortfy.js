@@ -1,4 +1,4 @@
-import sort from 'sortfy.js'
+import { sort } from './../../src'
 
 const array_number = [1, 2, 3, 4, 5]
 const array_string = ['a', 'b', 'c', 'd', 'e']
